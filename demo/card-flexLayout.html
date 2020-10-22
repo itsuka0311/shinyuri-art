@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    .inner {max-width: 960px; margin: 0 auto;}
+    .card-list {display: flex; justify-content: space-between; flex-wrap: wrap;}
+    .card-item {width: calc((100% - 60px) / 4); margin-bottom: 30px; background-color: pink; display: flex; flex-direction: column;}
+    .item-img {min-height: 200px; background-color: grey; order: -1;}
+    .item-img, .item-title, .item-desc {margin-bottom: 24px;}
+    .item-desc {flex-grow: 1;}
+    .card-item:not(:nth-child(4n+1)) {margin-left: 20px;}
+    .card-list::after {content: ""; flex-grow: 1;}
+  </style>
+</head>
+<body>
+  <div class="inner">
+    <div class="card-list">
+      <div class="card-item">        
+        <p class="item-title">商品名１</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+
+      <div class="card-item">
+        <p class="item-title">商品名２</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+
+      <div class="card-item">
+        <p class="item-title">商品名３</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+
+      <div class="card-item">
+        <p class="item-title">商品名４</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+
+      <div class="card-item">
+        <p class="item-title">商品名５</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+
+      <div class="card-item">
+        <p class="item-title">商品名６</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+
+      <div class="card-item">
+        <p class="item-title">商品名６</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+      <div class="card-item">
+        <p class="item-title">商品名６</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+      <div class="card-item">
+        <p class="item-title">商品名６</p>
+        <p class="item-desc">ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。ここに商品説明がはいります。</p>
+        <p class="item-price">500円</p>
+        <p class="item-img"><img src="" alt=""></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin: 0;padding: 0; box-sizing: border-box;}
+    .inner {max-width: 700px; margin: auto;}
+    .menu-list {display: flex; flex-wrap: wrap;}
+
+    .menu-list dt {width: calc(100% - 4em); flex-grow: 1; padding: 10px 0; display: flex; }
+    .menu-list dd {padding-left: 1em; align-self: center;}
+
+    .menu-list dt div {font-size: 24px;}
+    .menu-list dt div span {font-size: 10px; display: block;}
+    .menu-list dt::after {
+      content: "";
+      flex-grow: 1;
+      background-image   : url(bg_dot.png);
+      background-repeat: repeat-x;
+      background-position: right center;
+      background-size: auto 12px;
+      margin-left: 1em;
+  }
+  </style>
+</head>
+<body>
+  <div class="inner">
+  <dl class="menu-list">
+    <dt><div>milk coffee<span>ミルク珈琲</span></dt>
+    <dd>200円</dd>
+    <dt><div>milk tea<span>ミルクティー</span></div></dt>
+    <dd>200円</dd>
+    <dt><div>loyal milk tea<span>ロイヤルミルクティー</span></div></dt>
+    <dd>200円</dd>
+  </dl>
+  </div>
+</body>
+</html>
